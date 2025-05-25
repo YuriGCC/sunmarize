@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="painelsContainer">
+    <ul>
+      <li *ngFor="let panel of panels">
+        <app-panel [panelData]="panel"></app-panel>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <app-dashboard [panelData]="panels"></app-dashboard>
+  </div>
+</div>

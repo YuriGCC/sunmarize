@@ -1,0 +1,25 @@
+.map-container {
+  height: 500px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.headerContainer {
+  position: sticky;
+  width: 100%;
+  height: 200px;
+}
+
+#testeDiv {
+  height: 180px;
+}
+
+
+/* paleta
+#393D3F
+#FDFDFF
+#C6C5B9
+#62929E
+#546A7B
+*/

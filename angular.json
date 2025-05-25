@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/sunmarize/",
             "outputPath": "dist/sunmarize",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -24,7 +25,9 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets",
+              "src/assets/img"
             ],
             "styles": [
               "src/styles.css"
@@ -92,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

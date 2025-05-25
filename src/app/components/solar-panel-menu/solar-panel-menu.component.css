@@ -1,0 +1,15 @@
+div {
+  background-color: #393D3F;
+}
+
+.painelsContainer li {
+  list-style: none;
+  display: inline-flex;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.painelsContainer li:hover {
+  background-color: #62929E;
+  padding: 25px;
+}

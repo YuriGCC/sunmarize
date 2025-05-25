@@ -1,0 +1,24 @@
+<div class="container">
+  <div #mapContainer class="map-container"></div>
+  <div class="searchContainer">
+    <p>
+      Aqui você pode verificar a eficiência dos paineis em um local desejado, digite o nome da cidade para descobrir
+      os melhores locais para instalação de paineis no local.
+    </p>
+    <fieldset>
+      <label for="cidade">Cidade: </label>
+      <input type="search" id="cidade" [formControl]="cityInput" autofocus placeholder="digite o nome da cidade">
+    </fieldset>
+    <button (click)="targetCity()" class="btn btn-info">buscar</button>
+  </div>
+  <div *ngIf="nasapowerResponse">
+    <h3>Dados de Irradiação Solar</h3>
+    <ul>
+      <li *ngFor="let item of nasapowerResponse.properties.parameter.ALLSKY_SFC_SW_DWN | keyvalue">
+        Data: {{ item.key }} - Valor: {{ item.value }} kW-hr/m²/day
+      </li>
+    </ul>
+  </div>
+
+</div>
+
